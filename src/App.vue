@@ -1,6 +1,6 @@
 <template>
   <header class="bg-gray-700 py-3">
-    <nav class="flex hidden flex-initial flex-wrap justify-center justify-between gap-2 sm:flex">
+    <nav class="hidden flex-initial flex-wrap justify-between gap-2 sm:flex">
       <ul class="flex text-gray-300">
         <li class="pl-2 font-radio-canada"><router-link to="/">Accueil</router-link></li>
         <li class="pl-2 font-radio-canada"><router-link to="/programme">Programme</router-link></li>
@@ -79,7 +79,7 @@
 
   <footer class="bg-red-500 py-6">
     <nav>
-      <ul class="flex hidden justify-around sm:flex">
+      <ul class="hidden justify-around sm:flex">
         <li class="font-radio-canada"><router-link to="/programme">Programme</router-link></li>
         <li class="font-radio-canada"><router-link to="/billetterie">Billetterie</router-link></li>
         <li class="font-radio-canada"><router-link to="/artistes">Artistes</router-link></li>
