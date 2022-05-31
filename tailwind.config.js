@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       "colors": {
+        "red-750": "#af0808"
         // Ici vos couleurs exportées de Figma
       },
       "fontFamily": {

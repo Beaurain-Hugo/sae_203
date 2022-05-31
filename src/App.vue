@@ -3,23 +3,25 @@
     <nav class="hidden flex-initial flex-wrap justify-between gap-2 sm:flex">
       <ul class="flex text-gray-300">
         <li class="pl-2 font-radio-canada"><router-link to="/">Accueil</router-link></li>
-        <li class="pl-2 font-radio-canada"><router-link to="/programme">Programme</router-link></li>
-        <li class="pl-2 font-radio-canada"><router-link to="/billetterie">Billetterie</router-link></li>
-        <li class="pl-2 font-radio-canada"><router-link to="/artistes">Artistes</router-link></li>
-        <li class="pl-2 font-radio-canada"><router-link to="/partenaires">Partenaires</router-link></li>
+        <li class="pl-1 font-radio-canada"><router-link to="/programme">Programme</router-link></li>
+        <li class="pl-1 font-radio-canada"><router-link to="/billetterie">Billetterie</router-link></li>
+        <li class="pl-1 font-radio-canada"><router-link to="/artistes">Artistes</router-link></li>
+        <li class="pl-1 font-radio-canada"><router-link to="/partenaires">Partenaires</router-link></li>
       </ul>
       <ul class="flex">
         <li class="pr-2 font-radio-canada">
-          <router-link to="#" class="rounded-lg bg-red-500 py-1 px-2 text-white">SE CONNECTER</router-link>
+          <router-link to="#" class="rounded-lg bg-red-500 py-1 px-1 text-white hover:bg-red-750">SE CONNECTER</router-link>
         </li>
         <li class="pr-2 font-radio-canada">
-          <router-link to="#" class="rounded-lg border-2 border-red-200 py-1 px-2 text-red-500">S'INSCRIRE</router-link>
+          <router-link to="#" class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750"
+            >S'INSCRIRE</router-link
+          >
         </li>
       </ul>
     </nav>
     <div class="flex justify-between">
       <button class="relative z-50 text-xl sm:hidden">
-        <MenuIcon class="w- h-10" />
+        <MenuIcon class="h-10 w-10" />
         <span class="sr-only">Menu</span>
       </button>
       <button
@@ -29,7 +31,7 @@
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert"
       >
-        <MenuIcon class="w- h-10" />
+        <MenuIcon class="h-10 w-10" />
       </button>
     </div>
     <div
@@ -103,15 +105,15 @@
         Pour être à jour sur nos actualités, abonnez-vous à notre newsletter !
       </p>
       <form class="flex flex-col text-center">
-        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="text" placeholder="Insérez votre nom" /></label>
-        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="email" placeholder="Insérez votre email" /></label>
+        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="text" placeholder="Nom" /></label>
+        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="email" placeholder="Email" /></label>
         <button class="mx-auto rounded-lg border-2 border-red-200 py-1 px-2 font-radio-canada text-black" type="submit">Envoyer</button>
       </form>
     </div>
     <div class="flex justify-center pt-4">
       <p class="mx-8 text-center font-radio-canada">Suivez-nous sur nos réseaux sociaux pour plus de rock !</p>
     </div>
-    <div class="flex justify-around pt-2">
+    <div class="flex justify-evenly pt-2">
       <a href="#"><twitter class="h-10 w-10" /></a>
       <a href="#"><instagram class="h-10 w-10" /></a>
       <a href="#"><facebook class="h-10 w-10" /></a>
