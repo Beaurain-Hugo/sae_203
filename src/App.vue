@@ -35,7 +35,7 @@
         inset-0
         flex
         translate-x-full
-        items-center
+        flex-col
         justify-center
         bg-gray-700
         motion-safe:transition-transform motion-safe:duration-1000
@@ -49,7 +49,7 @@
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert"
       >
-        <XIcon class="w- h-10" />
+        <XIcon class="h-10 w-10" />
       </button>
       <nav>
         <ul class="text-center text-gray-300">
@@ -71,11 +71,51 @@
 
   <RouterView />
 
-  <footer></footer>
+  <footer class="bg-red-500 py-6">
+    <nav>
+      <ul class="flex hidden justify-around sm:flex">
+        <li><router-link to="/programme">Programme</router-link></li>
+        <li><router-link to="/billetterie">Billetterie</router-link></li>
+        <li><router-link to="/artistes">Artistes</router-link></li>
+        <li><router-link to="/partenaires">Partenaires</router-link></li>
+        <li><router-link to="/contact">Nous contacter</router-link></li>
+        <li><router-link to="/mentions-legales">Mentions légales</router-link></li>
+      </ul>
+    </nav>
+    <nav class="sm:hidden">
+      <ul class="flex flex-col flex-wrap text-center">
+        <li class="my-2"><router-link to="/programme">Programme</router-link></li>
+        <li class="my-2"><router-link to="/billetterie">Billetterie</router-link></li>
+        <li class="my-2"><router-link to="/artistes">Artistes</router-link></li>
+        <li class="my-2"><router-link to="/partenaires">Partenaires</router-link></li>
+        <li class="my-2"><router-link to="/contact">Nous contacter</router-link></li>
+        <li class="my-2"><router-link to="/mentions-legales">Mentions légales</router-link></li>
+      </ul>
+    </nav>
+    <div class="pt-4">
+      <p class="mx-8 flex justify-center pb-2 text-center">Pour être à jour sur nos actualités, abonnez-vous à notre newsletter !</p>
+      <form class="flex flex-col text-center">
+        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="text" placeholder="Insérez votre nom" /></label>
+        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="email" placeholder="Insérez votre email" /></label>
+        <button class="mx-auto rounded-lg border-2 border-red-200 py-1 px-2 text-black" type="submit">Envoyer</button>
+      </form>
+    </div>
+    <div class="flex justify-center pt-4">
+      <p class="mx-8 text-center">Suivez-nous sur nos réseaux sociaux pour plus de rock !</p>
+    </div>
+    <div class="flex justify-around pt-2">
+      <a href="#"><twitter class="h-10 w-10" /></a>
+      <a href="#"><instagram class="h-10 w-10" /></a>
+      <a href="#"><facebook class="h-10 w-10" /></a>
+    </div>
+  </footer>
 </template>
 
 <script>
 import { MenuIcon, XIcon } from "@heroicons/vue/solid";
+import twitter from "./components/icons/TwitterView.vue";
+import instagram from "./components/icons/InstagramView.vue";
+import facebook from "./components/icons/FacebookView.vue";
 export default {
   name: "App",
   data() {
@@ -86,6 +126,6 @@ export default {
   beforeMount() {
     this.$router.afterEach(() => (this.menuOuvert = false));
   },
-  components: { MenuIcon, XIcon },
+  components: { MenuIcon, XIcon, twitter, instagram, facebook },
 };
 </script>
