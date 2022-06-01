@@ -100,15 +100,21 @@
         <li class="my-2 font-radio-canada"><router-link to="/mentions-legales">Mentions légales</router-link></li>
       </ul>
     </nav>
-    <div class="pt-4">
-      <p class="mx-8 flex justify-center pb-2 text-center font-radio-canada">
-        Pour être à jour sur nos actualités, abonnez-vous à notre newsletter !
-      </p>
+    <div class="pt-4 font-radio-canada">
+      <p class="mx-8 flex justify-center pb-2 text-center">Pour être à jour sur nos actualités, abonnez-vous à notre newsletter !</p>
       <form class="flex flex-col text-center">
-        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="text" placeholder="Nom" /></label>
-        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="email" placeholder="Email" /></label>
+        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="text" placeholder="Nom*" required /></label>
+        <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="email" placeholder="Email*" required /></label>
         <button class="mx-auto rounded-lg border-2 border-red-200 py-1 px-2 font-radio-canada text-black" type="submit">Envoyer</button>
       </form>
+      <div class="m-auto flex w-4/5 flex-col text-sm">
+        <p>* Champs obligatoires</p>
+        <p>
+          (2) En communicant mes informations,je consens à être recontacté par voie électronique par l'équipe du festival Gold Rock. Ces
+          données seront conservées durant 30 jours afin de pouvoir traiter au mieux ma demande. Je pourrais modifier ou supprimer mes
+          informations sur simple demande
+        </p>
+      </div>
     </div>
     <div class="flex justify-center pt-4">
       <p class="mx-8 text-center font-radio-canada">Suivez-nous sur nos réseaux sociaux pour plus de rock !</p>
