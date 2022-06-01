@@ -105,12 +105,16 @@
       <form class="flex flex-col text-center">
         <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="text" placeholder="Nom*" required /></label>
         <label class="mb-2"><input class="w-3/5 rounded-lg px-2 py-4" type="email" placeholder="Email*" required /></label>
+        <div class="flex items-center justify-center">
+          <input class="" type="checkbox" required />
+          <p>J'ai compris et j'accepte⁽¹⁾</p>
+        </div>
         <button class="mx-auto rounded-lg border-2 border-red-200 py-1 px-2 font-radio-canada text-black" type="submit">Envoyer</button>
       </form>
       <div class="m-auto flex w-4/5 flex-col text-sm">
         <p>* Champs obligatoires</p>
         <p>
-          (2) En communicant mes informations,je consens à être recontacté par voie électronique par l'équipe du festival Gold Rock. Ces
+          (1) En communicant mes informations,je consens à être recontacté par voie électronique par l'équipe du festival Gold Rock. Ces
           données seront conservées durant 30 jours afin de pouvoir traiter au mieux ma demande. Je pourrais modifier ou supprimer mes
           informations sur simple demande
         </p>
