@@ -9,35 +9,35 @@
       <div class="mt-5 text-center">
         <p class="font-radio-canada text-xl">Vendredi 15 juillet</p>
         <div class="flex flex-col justify-evenly pt-4 sm:flex-row">
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom No" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom N" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom No" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom N" img="" />
         </div>
       </div>
       <div class="mt-5 text-center">
         <p class="font-radio-canada text-xl">Samedi 16 juillet</p>
         <div class="flex flex-col justify-evenly pt-4 sm:flex-row">
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom No" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom N" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom No" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom N" img="" />
         </div>
         <div class="flex flex-col justify-evenly sm:flex-row">
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom No" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom N" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom No" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom N" img="" />
         </div>
       </div>
       <div class="mt-5 text-center">
         <p class="font-radio-canada text-xl">Dimanche 17 juillet</p>
         <div class="flex flex-col justify-evenly pt-4 sm:flex-row">
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom No" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom N" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom No" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom N" img="" />
         </div>
         <div class="flex flex-col justify-evenly sm:flex-row">
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom No" img="" />
-          <carteArtistes class="mb-2" schedule="Date et heure" name="Prénom N" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom Nom" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom No" img="" />
+          <carteArtistes class="m-auto mb-2" schedule="Date et heure" name="Prénom N" img="" />
         </div>
       </div>
     </div>
