@@ -4,33 +4,10 @@
       <h1 class="text-3xl">Ce festival n'existerait pas sans nos partenaires !</h1>
       <h2 class="pt-4 text-2xl">Un grand merci à eux qui ont acceptés de nous faire confiance !</h2>
     </div>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Nom</th>
-          <th>Desc</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="part in listPart" :key="part.id">
-          <td>{{ part.id }}</td>
-          <td>{{ part.nom }}</td>
-          <td>{{ part.desc }}</td>
-          <td>
-            <!--<input type="text" v-model="part.nom" /> -->
-          </td>
-          <td>
-            <button @click.prevent="updatePart(part)">
-              <i></i>
-            </button>
-          </td>
-          <button @click.prevent="deletePart(part)">
-            <i></i>
-          </button>
-        </tr>
-      </tbody>
-    </table>
+
+    <div v-for="part in listPart" :key="part.id">
+      <p>{{ part.nom }}</p>
+    </div>
   </main>
 </template>
 
