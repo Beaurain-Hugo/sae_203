@@ -10,7 +10,7 @@
       </ul>
       <ul class="flex">
         <li class="pr-2 font-radio-canada">
-          <router-link to="#" class="rounded-lg bg-red-500 py-1 px-1 text-white hover:bg-red-750">SE CONNECTER</router-link>
+          <router-link to="/connexion" class="rounded-lg bg-red-500 py-1 px-1 text-white hover:bg-red-750">SE CONNECTER</router-link>
         </li>
         <li class="pr-2 font-radio-canada">
           <router-link to="#" class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750"
@@ -109,7 +109,9 @@
           <input class="" type="checkbox" required />
           <p>J'ai compris et j'accepte⁽¹⁾</p>
         </div>
-        <button class="mx-auto rounded-lg border-2 border-red-200 py-1 px-2 font-radio-canada text-black" type="submit">Envoyer</button>
+        <button class="mx-auto rounded-lg border-2 border-red-200 py-1 px-2 font-radio-canada text-black hover:shadow-xl" type="submit">
+          Envoyer
+        </button>
       </form>
       <div class="m-auto flex w-4/5 flex-col text-sm">
         <p>* Champs obligatoires</p>
