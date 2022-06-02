@@ -11,6 +11,7 @@ import CreateView from '../views/artistes/CreateView.vue'
 import ListeView from '../views/artistes/ListeView.vue'
 import UpdateView from '../views/artistes/UpdateView.vue'
 import DeleteView from '../views/artistes/DeleteView.vue'
+import Page404View from '../views/404View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,7 @@ const router = createRouter({
     { path: '/artistes/liste', name: 'ListeArtistes', component: ListeView },
     { path: '/artistes/update/:id', name: 'UpdateArtistes', component: UpdateView },
     { path: '/artistes/delete/:id', name: 'DeleteArtistes', component: DeleteView },
+    { path: '/:pathMatch(.*)*', name: 'page404View', component: Page404View },
     // ici les autre routes
   ]
 })
