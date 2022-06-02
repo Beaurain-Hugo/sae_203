@@ -16,10 +16,9 @@
       <form action="">
         <p>Nouveau partenaire</p>
         <div>
-          <div><span>Nom</span></div>
+          <span>Nom</span>
           <input type="text" v-model="nom" required />
           <div><span>Description</span></div>
-
           <input type="text" v-model="desc" required />
           <button type="button" @click="createPart()" title="Création"><i>Créer</i></button>
         </div>
@@ -43,7 +42,7 @@ export default {
   data() {
     return {
       nom: null,
-      listePart: [],
+      listPart: [],
     };
   },
   mounted() {
@@ -73,6 +72,13 @@ export default {
         nom: part.nom,
         desc: part.desc,
       });
+      console.log("document modifié", docRef.id);
+    },
+    async deletePart(part) {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "partenaires", part.id);
+      await deleteDoc(docRef);
+      console.log("document supprimé", docRef.id);
     },
   },
 };
