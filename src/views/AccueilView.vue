@@ -4,7 +4,7 @@
       <div class="text-center font-tapestry">
         <h1 class="text-3xl">Venez écouter tout l'or du rock du 15 au 17 juillet 2022 à Bordeaux !</h1>
         <h2 class="pt-4 text-2xl">Gold Rock vous présente la première édition de son festival 100% rock !</h2>
-        <img class="mt-3 h-auto w-full" src="../../images/foule_concert_exterieur.jpg" alt="Image du concert de jsp" />
+        <img class="mt-3 h-auto w-full" src="../../images/foule_concert_exterieur.jpg" alt="Image de concert" />
       </div>
 
       <div class="py-4">
