@@ -5,7 +5,7 @@
         <li class="pl-2 font-radio-canada"><router-link to="/">Accueil</router-link></li>
         <li class="pl-1 font-radio-canada"><router-link to="/programme">Programme</router-link></li>
         <li class="pl-1 font-radio-canada"><router-link to="/billetterie">Billetterie</router-link></li>
-        <li class="pl-1 font-radio-canada"><router-link to="/artistes">Artistes</router-link></li>
+        <li class="pl-1 font-radio-canada"><router-link to="/artistes/liste">Artistes</router-link></li>
         <li class="pl-1 font-radio-canada"><router-link to="/partenaires">Partenaires</router-link></li>
       </ul>
       <ul class="flex">
@@ -62,7 +62,7 @@
           <li class="my-4 font-radio-canada"><router-link to="/">Accueil</router-link></li>
           <li class="my-4 font-radio-canada"><router-link to="/programme">Programme</router-link></li>
           <li class="my-4 font-radio-canada"><router-link to="/billetterie">Billetterie</router-link></li>
-          <li class="my-4 font-radio-canada"><router-link to="/artistes">Artistes</router-link></li>
+          <li class="my-4 font-radio-canada"><router-link to="/artistes/liste">Artistes</router-link></li>
           <li class="my-4 font-radio-canada"><router-link to="/partenaires">Partenaires</router-link></li>
         </ul>
         <ul class="text-center">
@@ -84,7 +84,7 @@
       <ul class="hidden justify-around sm:flex">
         <li class="font-radio-canada"><router-link to="/programme">Programme</router-link></li>
         <li class="font-radio-canada"><router-link to="/billetterie">Billetterie</router-link></li>
-        <li class="font-radio-canada"><router-link to="/artistes">Artistes</router-link></li>
+        <li class="font-radio-canada"><router-link to="/artistes/liste">Artistes</router-link></li>
         <li class="font-radio-canada"><router-link to="/partenaires">Partenaires</router-link></li>
         <li class="font-radio-canada"><router-link to="/contact">Nous contacter</router-link></li>
         <li class="font-radio-canada"><router-link to="/mentions-legales">Mentions légales</router-link></li>
@@ -94,7 +94,7 @@
       <ul class="flex flex-col flex-wrap text-center">
         <li class="my-2 font-radio-canada"><router-link to="/programme">Programme</router-link></li>
         <li class="my-2 font-radio-canada"><router-link to="/billetterie">Billetterie</router-link></li>
-        <li class="my-2 font-radio-canada"><router-link to="/artistes">Artistes</router-link></li>
+        <li class="my-2 font-radio-canada"><router-link to="/artistes/liste">Artistes</router-link></li>
         <li class="my-2 font-radio-canada"><router-link to="/partenaires">Partenaires</router-link></li>
         <li class="my-2 font-radio-canada"><router-link to="/contact">Nous contacter</router-link></li>
         <li class="my-2 font-radio-canada"><router-link to="/mentions-legales">Mentions légales</router-link></li>

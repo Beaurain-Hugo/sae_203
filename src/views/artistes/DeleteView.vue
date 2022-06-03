@@ -75,7 +75,7 @@ import {
   orderBy,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
-import { getStorage, ref, getDownloadURL, uploadString } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+import { getStorage, ref, getDownloadURL, uploadString, deleteObject } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
 export default {
   name: "DeleteView",
   data() {
@@ -121,11 +121,11 @@ export default {
 
     async deleteArtiste() {
       const firestore = getFirestore();
-      await deleteDoc(doc(firestore, "artiste", this.$route.params.id));
+      await deleteDoc(doc(firestore, "artistes", this.$route.params.id));
       const storage = getStorage();
       let docRef = ref(storage, "artistes/" + this.artiste.photo);
       deleteObject(docRef);
-      this.$router.push("/artistes");
+      this.$router.push("/artistes/liste");
     },
   },
 };

@@ -6,6 +6,11 @@
         <h2 class="pt-4 text-2xl">Et ils sont présents seulement pour vous !</h2>
         <img class="mt-3 h-auto w-full" src="/images/imagine_dragon.jpg" alt="Photographie du groupe Imagine Dragons" />
       </div>
+      <div class="mt-2 mr-2 flex justify-end">
+        <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750">
+          <router-link to="/artistes/create">Créer</router-link>
+        </button>
+      </div>
       <div class="flex flex-col">
         <div class="flex flex-col items-center justify-center pt-4" v-for="artistes in listArtiste" :key="artistes.id">
           <div class="w-2/3 rounded-md border-4 border-red-200 text-center font-radio-canada sm:w-1/4">

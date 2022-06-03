@@ -1,27 +1,34 @@
 <template>
   <main class="bg-red-50">
     <div class="p-8">
-      <div class="rounded-md bg-red-200">
-        <p class="font-radio-canada">Se connecter</p>
-        <form @submit.prevent="onCnx()">
-          <div class="">
+      <div class="flex justify-center">
+        <div class="w-1/2 rounded-md bg-red-200 p-2">
+          <p class="font-radio-canada">Se connecter</p>
+          <form @submit.prevent="onCnx()">
             <div class="">
-              <button class="">Email :</button>
+              <div class="">
+                <button class="">Email :</button>
+              </div>
+              <input type="mail" v-model="user.email" required />
             </div>
-            <input type="mail" v-model="user.email" required />
-          </div>
-          <div>
             <div>
-              <button>Mot de passe :</button>
+              <div>
+                <button>Mot de passe :</button>
+              </div>
+              <input type="password" v-model="user.password" required />
             </div>
-            <input type="password" v-model="user.password" required />
-          </div>
-          <div class="" v-if="message != null">{{ message }}</div>
-          <div>
-            <button @click="onDcnx()">Deconnexion</button>
-            <button type="submit">Connexion</button>
-          </div>
-        </form>
+            <div class="" v-if="message != null">{{ message }}</div>
+            <div class="flex justify-around pt-1">
+              <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Connexion</button>
+              <button
+                class="rounded-lg border-2 border-red-300 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750"
+                @click="onDcnx()"
+              >
+                Deconnexion
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </main>

@@ -60,7 +60,7 @@
           <div class="flex justify-evenly">
             <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Modifier</button>
             <button class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750">
-              <router-link to="/artistes">Annuler</router-link>
+              <router-link to="/artistes/liste">Annuler</router-link>
             </button>
           </div>
         </form>
@@ -83,7 +83,7 @@ import {
   orderBy,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
-import { getStorage, ref, getDownloadURL, uploadString } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+import { getStorage, ref, getDownloadURL, uploadString, deleteObject } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
 export default {
   name: "UpdateArtistesView",
   data() {
@@ -125,7 +125,7 @@ export default {
           this.imageData = url;
         })
         .catch((error) => {
-          console.log("erreur downloadURL");
+          console.log("erreur downloadURL", error);
         });
     },
     previewImage: function (event) {
@@ -148,12 +148,12 @@ export default {
         deleteObject(docRef);
         docRef = ref(storage, "artistes/" + this.artiste.photo);
         await uploadString(docRef, this.imageData, "data_url").then((snapshot) => {
-          console.log("Uploaded a base64 string", this.participant.photo);
+          console.log("Uploaded a base64 string", this.artiste.photo);
         });
       }
       const firestore = getFirestore();
       await updateDoc(doc(firestore, "artistes", this.$route.params.id), this.artiste);
-      this.$router.push("/artistes");
+      this.$router.push("/artistes/liste");
     },
   },
 };

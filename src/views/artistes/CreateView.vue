@@ -45,7 +45,7 @@
           <div>
             <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Créer</button>
             <button class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750">
-              <router-link to="/artistes">Annuler</router-link>
+              <router-link to="/artistes/liste">Annuler</router-link>
             </button>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default {
         const db = getFirestore();
         const docRef = addDoc(collection(db, "artistes"), this.artiste);
       });
-      this.$router.push("/artistes");
+      this.$router.push("/artistes/liste");
     },
   },
 };
