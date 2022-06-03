@@ -4,7 +4,7 @@
       <div class="text-center font-tapestry">
         <h1 class="text-3xl">Les plus grands artistes du rock réunis en une place !</h1>
         <h2 class="pt-4 text-2xl">Et ils sont présents seulement pour vous !</h2>
-        <img class="mt-3 h-auto w-full" src="images/imagine_dragon.jpg" alt="Photographie du groupe Imagine Dragons" />
+        <img class="mt-3 h-auto w-full" src="/images/imagine_dragon.jpg" alt="Photographie du groupe Imagine Dragons" />
       </div>
       <div class="mt-5 text-center">
         <p class="font-radio-canada text-xl">Vendredi 15 juillet</p>
