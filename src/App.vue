@@ -10,11 +10,11 @@
       </ul>
       <ul class="flex">
         <li class="pr-2 font-radio-canada">
-          <router-link to="/connexion" class="rounded-lg bg-red-500 py-1 px-1 text-white hover:bg-red-750">SE CONNECTER</router-link>
+          <router-link to="/connexion" class="rounded-lg bg-red-500 py-1 px-1 text-white hover:bg-red-750">Se connecter</router-link>
         </li>
         <li class="pr-2 font-radio-canada">
           <router-link to="#" class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750"
-            >S'INSCRIRE</router-link
+            >S'inscrire</router-link
           >
         </li>
       </ul>
