@@ -56,12 +56,12 @@
                 </div>
               </div>
             </div>
-            <div class="flex justify-evenly">
-              <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Modifier</button>
-              <button class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750">
-                <router-link to="/artistes">Annuler</router-link>
-              </button>
-            </div>
+          </div>
+          <div class="flex justify-evenly">
+            <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Modifier</button>
+            <button class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750">
+              <router-link to="/artistes">Annuler</router-link>
+            </button>
           </div>
         </form>
       </div>
@@ -74,7 +74,7 @@ import {
   getFirestore,
   collection,
   doc,
-  getDocs,
+  getDoc,
   addDoc,
   updateDoc,
   deleteDoc,
@@ -111,6 +111,7 @@ export default {
       const firestore = getFirestore();
       const docRef = doc(firestore, "artistes", id);
       this.refArtiste = await getDoc(docRef);
+      console.log("artiste", this.refArtiste);
       if (this.refArtiste.exists()) {
         this.artiste = this.refArtiste.data();
         this.photoActuelle = this.artiste.photo;
@@ -129,7 +130,7 @@ export default {
     },
     previewImage: function (event) {
       this.file = this.$refs.file.files[0];
-      this.participant.photo = this.file.name;
+      this.artiste.photo = this.file.name;
       this.imgModifiee = true;
       var input = event.target;
       if (input.files && input.files[0]) {
@@ -151,7 +152,7 @@ export default {
         });
       }
       const firestore = getFirestore();
-      await updateDoc(doc(firestore, "artiste", this.$route.params.id), this.artiste);
+      await updateDoc(doc(firestore, "artistes", this.$route.params.id), this.artiste);
       this.$router.push("/artistes");
     },
   },
