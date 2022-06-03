@@ -47,9 +47,11 @@
                 <br />
                 <p>Attention vous allez supprimer cet artiste, cette action est irréversible !</p>
               </div>
-              <div>
-                <button type="submit">Supprimer</button>
-                <button><router-link to="/artistes">Annuler</router-link></button>
+              <div class="flex justify-evenly">
+                <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Supprimer</button>
+                <button class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750">
+                  <router-link to="/artistes">Annuler</router-link>
+                </button>
               </div>
             </div>
           </div>
@@ -113,7 +115,7 @@ export default {
           this.photoActuelle = url;
         })
         .catch((error) => {
-          console.log("erreure downloadURL", error);
+          console.log("erreur downloadURL", error);
         });
     },
 

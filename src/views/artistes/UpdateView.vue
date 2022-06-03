@@ -56,9 +56,11 @@
                 </div>
               </div>
             </div>
-            <div>
-              <button type="submit">Modifier</button>
-              <button><router-link to="/artistes">Annuler</router-link></button>
+            <div class="flex justify-evenly">
+              <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Modifier</button>
+              <button class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750">
+                <router-link to="/artistes">Annuler</router-link>
+              </button>
             </div>
           </div>
         </form>

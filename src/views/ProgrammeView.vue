@@ -6,7 +6,7 @@
         <h2 class="pt-4 text-2xl">Avec le programme, vous ne pourrez pas les rater !</h2>
       </div>
       <div class="flex justify-around">
-        <table class="table-auto text-center text-xl">
+        <table class="table-auto text-xl">
           <thead>
             <tr>
               <th>Artiste</th>
@@ -16,77 +16,77 @@
           </thead>
           <tbody>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Imagine Dragons</td>
               <td>Vendredi</td>
               <td>20h</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Arcade Fire</td>
               <td>Vendredi</td>
               <td>21h30</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Frantz Ferdinand</td>
               <td>Vendredi</td>
               <td>23h</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Last Train</td>
               <td>Samedi</td>
               <td>17h00</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Interpol</td>
               <td>Samedi</td>
               <td>18h30</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Liam Gallagher</td>
               <td>Samedi</td>
               <td>20h00</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Les Insus</td>
               <td>Samedi</td>
               <td>21h30</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Rolling Stones</td>
               <td>Samedi</td>
               <td>23h00</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>U2</td>
               <td>Samedi</td>
               <td>00h30</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Saez</td>
               <td>Dimanche</td>
               <td>17h00</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>The Strokes</td>
               <td>Dimanche</td>
               <td>18h30</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Scorpion</td>
               <td>Dimanche</td>
               <td>20h00</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Coldplay</td>
               <td>Dimanche</td>
               <td>21h30</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>Muse</td>
               <td>Dimanche</td>
               <td>23h00</td>
             </tr>
             <tr>
-              <td>Prénom Nom</td>
+              <td>The Murder Capital</td>
               <td>Dimanche</td>
               <td>00h30</td>
             </tr>

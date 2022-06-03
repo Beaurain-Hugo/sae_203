@@ -7,19 +7,32 @@
       </div>
 
       <div class="flex flex-col pt-4" v-for="part in listPart" :key="part.id">
-        <p class="font-tapestry text-4xl"><input type="text" v-model="part.nom" /></p>
-        <p class="font-radio-canada text-xl"><input type="text" v-model="part.desc" /></p>
-
-        <button type="button" @click.prevent="updatePart(part)" title="Modification"><i>Modifier</i></button>
-        <button type="button" @click.prevent="deletePart(part)" title="Suppression"><i>Supprimer</i></button>
+        <p class="font-tapestry text-4xl"><input class="rounded-lg p-1" type="text" v-model="part.nom" /></p>
+        <p class="font-radio-canada text-xl"><textarea class="h-10 w-full rounded-lg p-1" row="10px" type="text" v-model="part.desc" /></p>
+        <div class="flex justify-around">
+          <button
+            class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750"
+            type="button"
+            @click.prevent="updatePart(part)"
+            title="Modification"
+          >
+            <i>Modifier</i>
+          </button>
+          <button
+            class="rounded-lg border-2 border-red-200 py-1 px-2 text-red-500 hover:border-red-400 hover:text-red-750"
+            type="button"
+            @click.prevent="deletePart(part)"
+            title="Suppression"
+          >
+            <i>Supprimer</i>
+          </button>
+        </div>
       </div>
       <form action="">
         <p>Nouveau partenaire</p>
-        <div>
-          <span>Nom</span>
-          <input type="text" v-model="nom" required />
-          <div><span>Description</span></div>
-          <input type="text" v-model="desc" required />
+        <div class="flex flex-col">
+          <input type="text" placeholder="Insérer le nom" v-model="nom" required />
+          <input type="text" placeholder="Insérer la description" v-model="desc" required />
           <button type="button" @click="createPart()" title="Création"><i>Créer</i></button>
         </div>
       </form>

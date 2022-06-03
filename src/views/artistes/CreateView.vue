@@ -1,60 +1,57 @@
 <template>
-  <div>
-    <form @submit.prevent="createArtiste">
-      <div>
-        <div>
-          <p>Création d'artiste</p>
-        </div>
+  <main class="bg-red-50">
+    <div class="p-8">
+      <form @submit.prevent="createArtiste">
         <div>
           <div>
+            <p class="font-tapestry text-3xl">Création d'artiste</p>
+          </div>
+          <div class="font-radio-canada">
             <div>
               <div>
-                <img :src="imageData" alt="" />
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <span>Nom</span>
+                <div class="pt-4">
+                  <input class="rounded-lg p-1" placeholder="Prénom de l'artiste" v-model="artiste.prenom" required />
                 </div>
-                <input placeholder="Nom de l'artiste" v-model="artiste.nom" required />
-              </div>
-              <br />
-              <div>
+                <br />
                 <div>
-                  <span>Prénom</span>
+                  <input class="rounded-lg p-1" placeholder="Nom de l'artiste" v-model="artiste.nom" required />
                 </div>
-                <input placeholder="Prénom de l'artiste" v-model="artiste.prenom" required />
+                <br />
+                <div class="flex flex-col sm:flex-row">
+                  <div>
+                    <span>Photo</span>
+                  </div>
+                  <div>
+                    <input type="file" ref="file" id="file" @change="previewImage" />
+                  </div>
+                  <div>
+                    <div>
+                      <img class="h-auto w-60 rounded-lg" :src="imageData" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="">
+                  <div>
+                    <span>Date et heure</span>
+                  </div>
+                  <input class="rounded-lg p-1" type="date" format="dd/mm/yyyy" v-model="artiste.jour" required />
+                  <input class="rounded-lg p-1" type="time" v-model="artiste.heure" required />
+                </div>
+                <br />
               </div>
-              <br />
-              <div>
-                <div>
-                  <span>Photo</span>
-                </div>
-                <div>
-                  <input type="file" ref="file" id="file" @change="previewImage" />
-                  <label for="file">Sélectionner l'image</label>
-                </div>
-              </div>
-              <br />
-              <div>
-                <div>
-                  <span>Schedule</span>
-                </div>
-                <input type="date" format="dd/mm/yyyy" v-model="artiste.jour" required />
-                <input type="time" v-model="artiste.heure" required />
-              </div>
-              <br />
             </div>
           </div>
+          <div>
+            <button class="rounded-lg bg-red-500 py-1 px-2 text-white hover:bg-red-750" type="submit">Créer</button>
+            <button class="rounded-lg border-2 border-red-200 py-1 px-1 text-red-500 hover:border-red-400 hover:text-red-750">
+              <router-link to="/artistes">Annuler</router-link>
+            </button>
+          </div>
         </div>
-        <div>
-          <button type="submit">Créer</button>
-          <button><router-link to="/artistes">Annuler</router-link></button>
-        </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
+  </main>
 </template>
 
 <script>
