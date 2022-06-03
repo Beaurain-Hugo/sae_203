@@ -14,7 +14,7 @@
       <div class="flex flex-col">
         <div class="flex flex-col items-center justify-center pt-4" v-for="artistes in listArtiste" :key="artistes.id">
           <div class="w-2/3 rounded-md border-4 border-red-200 text-center font-radio-canada sm:w-1/4">
-            <img class="sm:max-h-32 sm:w-auto" :src="artistes.photo" :alt="artistes.prenom + ' ' + artistes.nom" />
+            <img class="sm:max-h-64 sm:w-auto" :src="artistes.photo" :alt="artistes.prenom + ' ' + artistes.nom" />
             <p class="font-tapestry text-4xl">{{ artistes.prenom }}</p>
             <p class="font-tapestry text-4xl">{{ artistes.nom }}</p>
             <p class="font-tapestry text-4xl">{{ dateFr(artistes.jour) }}</p>
