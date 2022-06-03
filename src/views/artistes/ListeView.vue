@@ -6,23 +6,25 @@
         <h2 class="pt-4 text-2xl">Et ils sont présents seulement pour vous !</h2>
         <img class="mt-3 h-auto w-full" src="/images/imagine_dragon.jpg" alt="Photographie du groupe Imagine Dragons" />
       </div>
-      <div class="flex flex-col pt-4" v-for="artistes in listArtiste" :key="artistes.id">
-        <div class="w-2/3 rounded-md border-4 border-red-200 font-radio-canada sm:w-1/4">
-          <img class="sm:m-h-32 sm:w-auto" :src="artistes.photo" :alt="artistes.prenom + ' ' + artistes.nom" />
-          <p class="font-tapestry text-4xl">{{ artistes.prenom }}</p>
-          <p class="font-tapestry text-4xl">{{ artistes.nom }}</p>
-          <p class="font-tapestry text-4xl">{{ dateFr(artistes.jour) }}</p>
-          <p class="font-tapestry text-4xl">{{ artistes.heure }}</p>
-          <span title="Suppression">
-            <router-link :to="{ name: 'DeleteArtistes', params: { id: artistes.id } }">
-              <i>Supprimer </i>
-            </router-link>
-          </span>
-          <span title="Modification">
-            <router-link :to="{ name: 'UpdateArtistes', params: { id: artistes.id } }">
-              <i>Modifier</i>
-            </router-link>
-          </span>
+      <div class="flex flex-col sm:flex-row">
+        <div class="flex flex-col justify-center pt-4" v-for="artistes in listArtiste" :key="artistes.id">
+          <div class="w-2/3 rounded-md border-4 border-red-200 text-center font-radio-canada sm:w-1/4">
+            <img class="sm:m-h-32 sm:w-auto" :src="artistes.photo" :alt="artistes.prenom + ' ' + artistes.nom" />
+            <p class="font-tapestry text-4xl">{{ artistes.prenom }}</p>
+            <p class="font-tapestry text-4xl">{{ artistes.nom }}</p>
+            <p class="font-tapestry text-4xl">{{ dateFr(artistes.jour) }}</p>
+            <p class="font-tapestry text-4xl">{{ artistes.heure }}</p>
+            <span title="Suppression">
+              <router-link :to="{ name: 'DeleteArtistes', params: { id: artistes.id } }">
+                <i>Supprimer </i>
+              </router-link>
+            </span>
+            <span title="Modification">
+              <router-link :to="{ name: 'UpdateArtistes', params: { id: artistes.id } }">
+                <i>Modifier</i>
+              </router-link>
+            </span>
+          </div>
         </div>
       </div>
     </div>
